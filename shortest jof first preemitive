@@ -33,7 +33,7 @@ else if(b_time[i]<=f_interval && b_time[i]!=0)
 {
 time+=b_time[i];
 w_time[i]=w_time[i]+s_time[i]-f_time[i];
-b_time=0;
+b_time[i]=0;
 }
 }
 for(i=0;i<n;i++)
@@ -45,7 +45,7 @@ printf("process\tBT\tWT\tTAT\n");
 for(i=0;i<n;i++)
 {
 printf("%d\t%d\t%d\t%d\n",id[i],r_time[i],w_time[i],t_a_time[i]);
-av_wt=av_wt_w_time[i];
+av_wt=av_wt+w_time[i];
 av_tat=av_tat+t_a_time[i];
 }
 av_wt=av_wt/n;
