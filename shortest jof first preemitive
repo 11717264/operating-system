@@ -14,7 +14,7 @@ scanf("%d",&b_time[i]);
 r_time[i]=b_time[i];
 b_t_sum=b_t_sum+b_time[i];
 w_time[i]=0;
-f_time=0;
+f_time[i]=0;
 }
 printf("Enter fixed interval of time: ");
 scanf("%d",&f_interval);
